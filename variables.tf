@@ -55,5 +55,19 @@ variable "assign_public_ip" {
   
 }
 
+variable "security_groups" {
+    type = list(string)
+  
+}
+
+variable "deployment_minimum_healthy_percent" {
+    type = number
+  
+}
+
+variable "deployment_maximum_percent" {
+    type = string
+  
+}
 
 
