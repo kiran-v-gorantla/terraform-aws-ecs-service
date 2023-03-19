@@ -14,9 +14,9 @@ variable "desired_count" {
     type = string
 }
 
-variable "iam_role_arn" {
+/*variable "iam_role_arn" {
     type = string
-}
+}*/
 
 variable "placement_type" {
     type = string
