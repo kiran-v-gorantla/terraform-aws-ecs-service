@@ -5,10 +5,10 @@ resource "aws_ecs_service" "service" {
   desired_count = var.desired_count
   #iam_role = var.iam_role_arn
 
-  ordered_placement_strategy {
+  /*ordered_placement_strategy {
       type = var.placement_type
       field = var.field
-  }
+  }*/
 
   load_balancer {
     target_group_arn = var.target_group_arn
