@@ -1,3 +1,3 @@
 output "service_arn" {
-  value = module.aws_ecs_service.service.arn
+  value = resource.aws_ecs_service.service.arn
 }
