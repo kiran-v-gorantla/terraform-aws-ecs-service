@@ -16,7 +16,7 @@ variable "desired_count" {
 
 /*variable "iam_role_arn" {
     type = string
-}*/
+}
 
 variable "placement_type" {
     type = string
@@ -24,7 +24,7 @@ variable "placement_type" {
 
 variable "field" {
     type = string
-}
+}*/
 
 variable "target_group_arn" {
     type = string
