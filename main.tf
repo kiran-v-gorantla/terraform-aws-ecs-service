@@ -3,7 +3,7 @@ resource "aws_ecs_service" "service" {
   cluster = var.cluster_id
   task_definition = var.task_definition_arn
   desired_count = var.desired_count
-  iam_role = var.iam_role_arn
+  #iam_role = var.iam_role_arn
 
   ordered_placement_strategy {
       type = var.placement_type
