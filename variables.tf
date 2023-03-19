@@ -46,5 +46,9 @@ variable "expression" {
     type = string
 }
 
+variable "subnets" {
+  type = list(string)
+}
+
 
 

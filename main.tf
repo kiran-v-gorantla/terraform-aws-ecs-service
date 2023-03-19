@@ -20,4 +20,8 @@ resource "aws_ecs_service" "service" {
       type = var.placement_constraints_type
       expression = var.expression #attribute:ecs.availability-zone in [us-west-2a, us-west-2b]
   }
+
+  network_configuration {
+      subnets = var.subnets
+  }
 }
