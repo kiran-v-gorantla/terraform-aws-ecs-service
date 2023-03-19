@@ -38,13 +38,13 @@ variable "container_port" {
     type = string
 }
 
-variable "placement_constraints_type" {
+/*variable "placement_constraints_type" {
     type = string
 }
 
 variable "expression" {
     type = string
-}
+}*/
 
 variable "subnets" {
   type = list(string)
