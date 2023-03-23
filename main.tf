@@ -8,7 +8,7 @@ resource "aws_ecs_service" "service" {
   #iam_role = var.iam_role_arn
 
   /*ordered_placement_strategy {
-      type = var.placement_type
+      type = var.placement_type∏
       field = var.field
   }*/
 
@@ -28,4 +28,10 @@ resource "aws_ecs_service" "service" {
       subnets = var.subnets
       assign_public_ip = var.assign_public_ip
   }
+
+  deployment_circuit_breaker {
+    enable = var.deployment_circuit_breaker_enabled
+    rollback = var.deployment_circuit_breaker_rollback_enabled
+  }
+
 }

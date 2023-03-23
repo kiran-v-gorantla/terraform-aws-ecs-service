@@ -70,4 +70,12 @@ variable "deployment_maximum_percent" {
   
 }
 
+variable "deployment_circuit_breaker_enabled" {
+    type = bool
+}
+
+variable "deployment_circuit_breaker_rollback_enabled" {
+    type = bool
+}
+
 
